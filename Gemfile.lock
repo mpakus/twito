@@ -44,6 +44,7 @@ GEM
     autoprefixer-rails (5.1.7)
       execjs
       json
+    awesome_print (1.6.1)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -247,6 +248,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
+  awesome_print
   better_errors
   bootstrap-sass (~> 3.3)
   bullet

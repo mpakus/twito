@@ -29,6 +29,7 @@ group :development do
   gem 'sextant'
   gem 'quiet_assets'
   gem 'bullet'
+  gem 'awesome_print'
 end
 
 group :production do
