@@ -6,7 +6,6 @@ RSpec.describe Message, type: :model do
     create(:message, id_str: '100500', user: user)
     msg = build(:message, id_str: '100500', user: user)
     msg.valid?
-    expect(msg.errors[:name]).to include('has already been taken')
+    expect(msg.errors[:id_str]).to include('has already been taken')
   end
-
 end

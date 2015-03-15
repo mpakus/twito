@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :message do
-    id_str Faker::Code.ean << Time.new.to_s
-    text "My twitter message"
+    id_str { Time.new.to_s + Faker::Code.ean }
+    text { Faker::Lorem.sentence(5) }
     association :user
   end
 end

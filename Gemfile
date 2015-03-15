@@ -21,7 +21,13 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'rubocop', require: false
   gem 'faker'
+  gem 'vcr', '~> 2.9.3'
 end
+
+group :test do
+  gem 'webmock', '~> 1.20.4'
+end
+
 
 group :development do
   gem 'better_errors'
@@ -39,7 +45,8 @@ end
 gem 'kaminari'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'autoprefixer-rails'
-
-
 gem 'rails_config'
 gem 'twitter'
+gem 'sidekiq'
+gem 'whenever', require: false
+gem 'sinatra', :require => nil
