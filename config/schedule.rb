@@ -1,3 +1,3 @@
-every 5.minute do
+every 2.minute do
   rake 'tweets:fetch'
 end
