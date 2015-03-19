@@ -7,6 +7,7 @@ class TweetsController < ApplicationController
     @user = User.subscribe(user_params)
     respond_to do |format|
       if @user
+        TwitterJob.perform_async(@user.id)
         format.html { redirect_to tweet_path(id: @user.name), notice: 'User subscribed.' }
         format.json { render json: @user, status: :created }
       else
