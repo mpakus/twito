@@ -15,4 +15,5 @@ production:
   <<: *default
   database: twito_production
   username: twito
+  host: localhost
   password: <%= ENV['TWITO_DATABASE_PASSWORD'] %>
