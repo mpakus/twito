@@ -36,10 +36,16 @@ group :development do
   gem 'quiet_assets'
   gem 'bullet'
   gem 'awesome_print'
+
+  gem "net-ssh", "~> 2.7.0"
+  gem 'capistrano', '~> 2'
+  gem 'rvm-capistrano'
+  gem 'capistrano-sidekiq' , github: 'seuros/capistrano-sidekiq'
 end
 
 group :production do
   gem 'utf8-cleaner'
+  gem 'unicorn'
 end
 
 gem 'kaminari'
